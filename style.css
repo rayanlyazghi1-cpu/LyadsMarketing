@@ -1,0 +1,48 @@
+/* RESET */
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI',sans-serif;}
+body {background:#141414; color:#fff; line-height:1.6; scroll-behavior:smooth;}
+a {text-decoration:none; color:inherit;}
+img {max-width:100%; border-radius:10px;}
+
+/* HEADER */
+header {padding:50px 20px; display:flex; flex-direction:column; align-items:center; position:relative;}
+.logo {position:absolute; top:20px; left:20px; display:flex; align-items:center; gap:10px;}
+.logo span {font-weight:bold; font-size:20px; color:#e50914;}
+.header-content {text-align:center; max-width:700px; margin-top:50px;}
+header h1 {font-size:32px; margin-bottom:15px; opacity:0; transform:translateY(30px); transition:all 1s;}
+header .subtitle {font-size:18px; margin-bottom:20px; opacity:0; transform:translateY(30px); transition:all 1s;}
+header .btn {background:#e50914; color:white; padding:12px 25px; border-radius:50px; font-weight:bold; transition:0.3s; opacity:0; transform:translateY(30px);}
+header .btn:hover {background:#ff4c4c;}
+
+/* SECTIONS */
+section {padding:80px 20px; max-width:1200px; margin:auto; opacity:0; transform:translateY(30px); transition:all 1s;}
+h2 {font-size:32px; margin-bottom:40px; text-align:center; color:#e50914;}
+
+/* SERVICES */
+.services-container {display:flex; justify-content:center; flex-wrap:wrap; gap:30px;}
+.service {background:#1f1f1f; padding:25px; border-radius:15px; text-align:center; color:#fff; box-shadow:0 8px 20px rgba(0,0,0,0.3); transition: transform 0.3s, box-shadow 0.3s;}
+.service:hover {transform:translateY(-10px) scale(1.03); box-shadow:0 15px 30px rgba(0,0,0,0.5);}
+.service i {font-size:40px; color:#e50914; margin-bottom:15px;}
+
+/* PORTFOLIO */
+.portfolio-container {display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px;}
+.portfolio-item {background:#1f1f1f; padding:25px; border-radius:15px; text-align:center; transition:0.3s;}
+.portfolio-item:hover {transform:translateY(-10px) scale(1.03); box-shadow:0 15px 30px rgba(0,0,0,0.5);}
+.portfolio-item p {margin-top:10px; color:#fff;}
+
+/* DASHBOARD AVANT/APRES */
+#dashboard .dashboard-container {display:flex; flex-wrap:wrap; justify-content:center; gap:30px;}
+.dashboard-card {width:300px; background:#1f1f1f; padding:20px; border-radius:15px; color:#fff; box-shadow:0 8px 20px rgba(0,0,0,0.3);}
+.dashboard-card h3 {color:#e50914; margin-bottom:20px;}
+.stat {margin-bottom:15px;}
+.bar {background:#333; height:12px; border-radius:8px; overflow:hidden;}
+.progress {height:12px; background:#e50914; width:0; border-radius:8px; transition:width 1.5s;}
+
+/* WHY */
+#why ul {list-style:none; font-size:18px; text-align:center;}
+#why li {margin:12px 0;}
+
+/* CONTACT */
+#contact {background:#1f1f1f; padding:60px 20px; border-radius:15px; text-align:center;}
+.contact-info {margin-top:30px; font-size:18px;}
+.contact-info a {color:#e50914; font-weight:bold;}
